@@ -9,14 +9,6 @@ class Calculation(ABC):
     a consistent interface that all calculation types (such as addition, subtraction, etc.) 
     must follow. 
     
-    Why Use an Abstract Base Class?
-    - **Abstraction**: By using an ABC, we focus on "what" calculations need to do (execute an operation) 
-      rather than "how" each specific operation is implemented. This simplifies our design.
-    - **Polymorphism**: By providing a standard interface, any Calculation subclass can be used 
-      interchangeably, allowing the program to treat each type of calculation in a consistent manner.
-    - **Enforcing Consistency**: The abstract `execute` method enforces that all subclasses implement 
-      their own specific version of the calculation logic, making sure that each type of calculation 
-      has an `execute` method.
     """
 
     def __init__(self, a: float, b: float) -> None:
