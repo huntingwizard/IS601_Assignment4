@@ -270,6 +270,11 @@ def test_division(monkeypatch, capsys):
     inputs = ["divide 10 2", "exit"]
     output = run_calculator_with_input(monkeypatch, capsys, inputs)
     assert "Result: 5.0" in output
+def test_modulo(monkeypatch, capsys):
+    """Test power operation in REPL."""
+    inputs = ["modulo 4 3", "exit"]
+    output = run_calculator_with_input(monkeypatch, capsys, inputs)
+    assert "Result: 1.0" in output
 
 
 # Negative Tests
