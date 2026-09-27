@@ -54,6 +54,8 @@ Examples:
     subtract 15.5 3.2
     multiply 7 8
     divide 20 4
+    power 2 4
+    modulo 10 3
     """
     print(help_message)
 # Now we're going to create the main function called "calculator". 
@@ -72,7 +74,7 @@ def calculator():
         try:
             # Now we ask the user to type something, like "add 5 3". 
             # This will get the operation (like "add") and two numbers from the user.
-            user_input = input("Enter an operation (add, subtract, multiply, divide) and two numbers, or 'exit' to quit: ")
+            user_input = input("Enter an operation (add, subtract, multiply, divide, power, modulo) and two numbers, or 'exit' to quit: ")
             if not user_input:
                 continue
             user_input=user_input.lower()
