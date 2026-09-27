@@ -259,6 +259,11 @@ def test_multiplication(monkeypatch, capsys):
     output = run_calculator_with_input(monkeypatch, capsys, inputs)
     assert "Result: 20.0" in output
 
+def test_power(monkeypatch, capsys):
+    """Test power operation in REPL."""
+    inputs = ["power 4 3", "exit"]
+    output = run_calculator_with_input(monkeypatch, capsys, inputs)
+    assert "Result: 64.0" in output
 
 def test_division(monkeypatch, capsys):
     """Test division operation in REPL."""
